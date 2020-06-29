@@ -32,8 +32,7 @@ class CreateExercise extends Component {
     onChangeUsername(e) {
         this.setState({
             username: e.target.value
-        });
-        
+        });   
     }
     onChangeDescription(e) {
         this.setState({
@@ -62,7 +61,7 @@ class CreateExercise extends Component {
             date: this.state.date,
         }
         console.log(exercise);
-        
+
         this.props.history.push("/");
         //window.location = '/';  //back to home
     }
