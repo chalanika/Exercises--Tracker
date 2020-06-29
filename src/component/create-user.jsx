@@ -27,7 +27,7 @@ class CreateUser extends Component {
         console.log(user);
 
         axios.post("http://localhost:5000/users/add",user);
-        
+
         this.setState({
             username: ''
         })

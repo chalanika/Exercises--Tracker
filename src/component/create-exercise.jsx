@@ -69,8 +69,8 @@ class CreateExercise extends Component {
         console.log(exercise);
 
         axios.post("http://localhost:5000/exercises/add",exercise);
-        this.props.history.push("/");
-        //window.location = '/';  //back to home
+        //this.props.history.push("/");
+        window.location = '/';  //back to home
     }
 
     render() {
