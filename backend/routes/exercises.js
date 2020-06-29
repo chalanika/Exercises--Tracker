@@ -10,15 +10,17 @@ router.route('./').get(async (req,res)=>{
     }
 });
 
-router.route('/add ').post(async (req,res)=>{
+router.route('/add').post(async (req,res)=>{
+    console.log(req.body);
     const newExercise = new Exercise({
         username : req.body.username,
         description:req.body.description,
-        duration:Number(req.body.duration),
-        date:Date.parse(req.body.date),
+        duration:req.body.duration,
+        date:req.body.date,
     });
     try {
         const saved = await newExercise.save();
+        console.log(saved);
         res.json(saved);
     } catch (error) {
         res.json({ message: error });
