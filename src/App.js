@@ -6,6 +6,7 @@ import NavBar from './component/navbar';
 import EditExercise from './component/edit-exercise';
 import CreateExercise from './component/create-exercise';
 import CreateUser from './component/create-user';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (

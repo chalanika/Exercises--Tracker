@@ -4,7 +4,7 @@ class CreateUser extends Component {
     state = {  }
     render() { 
         return ( 
-            <div></div>
+            <div>CreateUser</div>
          );
     }
 }

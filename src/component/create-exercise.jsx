@@ -4,7 +4,7 @@ class CreateExercise extends Component {
     state = {  }
     render() { 
         return ( 
-            <div></div>
+            <div>CreateExercise</div>
          );
     }
 }
