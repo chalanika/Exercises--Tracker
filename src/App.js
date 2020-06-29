@@ -12,11 +12,11 @@ function App() {
   return (
     <Router>
       <NavBar/>
-      <br/>
-      <Route path='/' component={ExerciseList}></Route>
-      <Route path='/edit/:id' component={EditExercise}></Route>
-      <Route path='/create' component={CreateExercise}></Route>
-      <Route path='/user' component={CreateUser}></Route>
+      <br/> 
+      <Route exact path='/edit/:id' component={EditExercise}></Route>
+      <Route exact path='/create' component={CreateExercise}></Route>
+      <Route exact path='/user' component={CreateUser}></Route>
+      <Route exact path='/' component={ExerciseList}></Route>
     </Router>
     
   );
