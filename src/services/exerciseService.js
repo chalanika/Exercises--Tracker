@@ -8,3 +8,8 @@ export function getExercises (){
 export function getRelevantExercise(id){
     return axios.get("http://localhost:5000/exercises/"+id);
 }
+
+
+export function getRelevantExercise(id){
+    return axios.get("http://localhost:5000/exercises/"+id);
+}
