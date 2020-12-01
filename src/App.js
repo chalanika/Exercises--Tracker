@@ -16,6 +16,7 @@ function App() {
       <Route exact path='/edit/:id' component={EditExercise}></Route>
       <Route exact path='/create' component={CreateExercise}></Route>
       <Route exact path='/user' component={CreateUser}></Route>
+      <Route exact path='/user' component={CreateUser}></Route>
       <Route exact path='/' component={ExerciseList}></Route>
     </Router>
     
